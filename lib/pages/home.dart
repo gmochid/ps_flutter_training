@@ -31,7 +31,30 @@ class HomePage extends StatelessWidget {
                         width: 80,
                         height: 80,
                       ),
-                      Text('TEXT'),
+                      Container(
+                        margin: EdgeInsets.only(left: 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: <Widget>[
+                            Text('Kangkung', style: TextStyle(
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold
+                            )),
+                            Container(
+                              decoration: BoxDecoration(
+                                color: Colors.yellow,
+                                borderRadius: BorderRadius.circular(8)
+                              ),
+                              padding: EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+                              child: Text('10%', style: TextStyle(
+                                color: Colors.red
+                              ),)
+                            ),
+                            Text('Harga Sayur'),
+                            Text('Button tambah'),
+                          ],
+                        )
+                      ),
                     ],
                   ),
                   Text('ICON'),
