@@ -68,63 +68,64 @@ class _MyHomePageState extends State<MyHomePage> {
 
   Padding _buildLoginWithFacebook() {
     return Padding(
-              padding: EdgeInsets.only(
-                top: 16,
-                left: 12,
-                right: 12,
-              ),
-              child: Container(
-                width: double.infinity,
-                child: RaisedButton(
-                  child: Text('Masuk dengan Facebook'),
-                  onPressed: () { print('Masuk dengan Facebook'); },
-                ),
-              ),
-            );
+      padding: EdgeInsets.only(
+        top: 16,
+        left: 12,
+        right: 12,
+      ),
+      child: Container(
+        width: double.infinity,
+        child: RaisedButton(
+          child: Text('Masuk dengan Facebook'),
+          onPressed: () { print('Masuk dengan Facebook'); },
+        ),
+      ),
+    );
   }
 
   Padding _buildLoginButton() {
     return Padding(
-              padding: const EdgeInsets.only(
-                top: 21,
-                left: 12,
-                right: 12,
-              ),
-              child: RaisedButton(
-                color: Color(0xFF6AA434),
-                child: Container(
-                  width: double.infinity,
-                  child: Center(
-                    child: Text(
-                      'Masuk', 
-                      style: TextStyle(color: Colors.white)
-                    )
-                  )
-                ),
-                onPressed: () { print('Hello'); },
-              ),
-            );
+      padding: const EdgeInsets.only(
+        top: 21,
+        left: 12,
+        right: 12,
+      ),
+      child: RaisedButton(
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
+        color: Color(0xFF6AA434),
+        child: Container(
+          width: double.infinity,
+          child: Center(
+            child: Text(
+              'Masuk', 
+              style: TextStyle(color: Colors.white)
+            )
+          )
+        ),
+        onPressed: () { print('Hello'); },
+      ),
+    );
   }
 
   Padding _buildPhoneTextField() {
     return Padding(
-              padding: const EdgeInsets.only(
-                top: 23,
-                left: 12,
-                right: 12,
-              ),
-              child: TextField(
-                decoration: InputDecoration(
-                  labelText: 'Nomor Telepon'
-                ),
-              ),
-            );
+      padding: const EdgeInsets.only(
+        top: 23,
+        left: 12,
+        right: 12,
+      ),
+      child: TextField(
+        decoration: InputDecoration(
+          labelText: 'Nomor Telepon'
+        ),
+      ),
+    );
   }
 
   Padding _buildTitle() {
     return Padding(
-              padding: EdgeInsets.only(top: 20),
-              child: Text('Masuk', style: TextStyle(fontSize: 20)),
-            );
+      padding: EdgeInsets.only(top: 20),
+      child: Text('Masuk', style: TextStyle(fontSize: 20)),
+    );
   }
 }
