@@ -12,11 +12,12 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xFFE5E5E5),
-      body: Column(
+      resizeToAvoidBottomPadding: true,
+      body: ListView(
         children: <Widget>[
-          Padding(
+          Container(
             padding: EdgeInsets.only(top: MediaQuery.of(context).size.height * 0.25),
-            child: Text('Programmer Semarang', style: TextStyle(fontSize: 24)),
+            child: Center(child: Text('Programmer Semarang', style: TextStyle(fontSize: 24))),
           ),
           Padding(
             padding: const EdgeInsets.only(top: 24),
