@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ps_flutter/color.dart';
 import 'package:ps_flutter/pages/home.dart';
 
 class LoginPage extends StatefulWidget {
@@ -79,7 +80,7 @@ class _LoginPageState extends State<LoginPage> {
       ),
       child: RaisedButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
-        color: Color(0xFF6AA434),
+        color: PSColor.primary,
         child: Container(
           width: double.infinity,
           child: Center(
