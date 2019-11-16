@@ -8,7 +8,16 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Home'),
       ),
-      body: Text('Hello'),
+      body: Container(
+        child: ListView(
+          children: <Widget>[
+            RaisedButton(
+              child: Text('Logout'),
+              onPressed: () { Navigator.pushReplacementNamed(context, '/'); },
+            )
+          ],
+        ),
+      ),
     );
   }
 }

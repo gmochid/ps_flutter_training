@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ps_flutter/pages/home.dart';
 
 class LoginPage extends StatefulWidget {
   LoginPage({Key key}) : super(key: key);
@@ -30,25 +31,25 @@ class _LoginPageState extends State<LoginPage> {
 
   Container _buildLoginBox() {
     return Container(
-        margin: EdgeInsets.symmetric(
-          horizontal: 25,
-        ),
-        width: double.infinity,
-        height: 300,
-        decoration: BoxDecoration(
-          color: Colors.white,
-          border: Border.all(color: Colors.black),
-          borderRadius: BorderRadius.circular(8)
-        ),
-        child: Column(
-          children: <Widget>[
-            _buildTitle(),
-            _buildPhoneTextField(),
-            _buildLoginButton(),
-            _buildLoginWithFacebook(),
-          ],
-        ),
-      );
+      margin: EdgeInsets.symmetric(
+        horizontal: 25,
+      ),
+      width: double.infinity,
+      height: 300,
+      decoration: BoxDecoration(
+        color: Colors.white,
+        border: Border.all(color: Colors.black),
+        borderRadius: BorderRadius.circular(8)
+      ),
+      child: Column(
+        children: <Widget>[
+          _buildTitle(),
+          _buildPhoneTextField(),
+          _buildLoginButton(),
+          _buildLoginWithFacebook(),
+        ],
+      ),
+    );
   }
 
   Padding _buildLoginWithFacebook() {
@@ -88,7 +89,9 @@ class _LoginPageState extends State<LoginPage> {
             )
           )
         ),
-        onPressed: () { print('Hello'); },
+        onPressed: () {
+          Navigator.pushReplacementNamed(context, '/home');
+        },
       ),
     );
   }
